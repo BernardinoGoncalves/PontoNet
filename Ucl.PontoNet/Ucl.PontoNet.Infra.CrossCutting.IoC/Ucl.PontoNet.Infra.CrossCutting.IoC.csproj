@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.7" />
+    <PackageReference Include="SimpleInjector" Version="5.0.3" />
+    <PackageReference Include="SimpleInjector.Integration.AspNetCore" Version="5.1.0" />
+    <PackageReference Include="SimpleInjector.Integration.AspNetCore.Mvc.Core" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ucl.PontoNet.Application.Core\Ucl.PontoNet.Application.Core.csproj" />
+    <ProjectReference Include="..\Ucl.PontoNet.Application\Ucl.PontoNet.Application.csproj" />
+    <ProjectReference Include="..\Ucl.PontoNet.Domain.Core\Ucl.PontoNet.Domain.Core.csproj" />
+    <ProjectReference Include="..\Ucl.PontoNet.Domain\Ucl.PontoNet.Domain.csproj" />
+    <ProjectReference Include="..\Ucl.PontoNet.Infra.Data\Ucl.PontoNet.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
