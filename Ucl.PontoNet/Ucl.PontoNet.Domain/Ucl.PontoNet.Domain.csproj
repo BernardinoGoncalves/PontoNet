@@ -10,8 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Base\" />
-    <Folder Include="Entities\" />
     <Folder Include="Enumerable\" />
     <Folder Include="Services\" />
     <Folder Include="Resources\" />

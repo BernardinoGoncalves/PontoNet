@@ -6987,6 +6987,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
             "C:\\Users\\81011124\\Documents\\Projetos\\UCL\\PontoNet\\Ucl.PontoNet\\Ucl.PontoNet.Application.Core\\Ucl.PontoNet.Application.Core.csproj": {
               "projectPath": "C:\\Users\\81011124\\Documents\\Projetos\\UCL\\PontoNet\\Ucl.PontoNet\\Ucl.PontoNet.Application.Core\\Ucl.PontoNet.Application.Core.csproj"
@@ -7014,6 +7015,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "AutoMapper": {
             "target": "Package",
@@ -7055,7 +7057,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

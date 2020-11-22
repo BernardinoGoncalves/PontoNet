@@ -11,6 +11,8 @@ namespace Ucl.PontoNet.Application.AutoMapper
         {
 
             CreateMap<PersonSampleDto, PersonSample>();
+            CreateMap<ClienteDto, Cliente>();
+            CreateMap<FuncionarioDto, Funcionario>();
 
         }
     }
