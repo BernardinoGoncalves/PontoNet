@@ -8,6 +8,9 @@ namespace Ucl.PontoNet.Domain.Repositories.Interfaces
 {
     public interface IClienteRepository : IRepository<Cliente>
     {
-
+        IEnumerable<Cliente> GetAll();
+        Cliente GetByCpf(string Cpf);
+        bool Insert(Cliente cliente);
+        bool Delete(string Cpf);
     }
 }

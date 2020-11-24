@@ -8,6 +8,7 @@ namespace Ucl.PontoNet.Domain.Services
 {
     public interface IClienteService : IService<Cliente>
     {
-
+        bool Insert(Cliente cliente);
+        bool Delete(string Cpf);
     }
 }
