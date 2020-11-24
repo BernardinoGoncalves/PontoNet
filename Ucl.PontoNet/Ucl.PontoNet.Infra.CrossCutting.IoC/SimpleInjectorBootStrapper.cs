@@ -25,6 +25,7 @@ using Microsoft.Data.SqlClient;
 using Ucl.PontoNet.Application.AutoMapper;
 using Ucl.PontoNet.Application.Core.Services;
 using Ucl.PontoNet.Domain.Core;
+using Ucl.PontoNet.Domain.Core.Services;
 
 namespace Ucl.PontoNet.Infra.CrossCutting.IoC
 {
@@ -84,6 +85,14 @@ namespace Ucl.PontoNet.Infra.CrossCutting.IoC
             container.Register<IPersonSampleAppService, PersonSampleAppService>(Lifestyle.Scoped);
             container.Register<IPersonSampleService, PersonSampleService>(Lifestyle.Scoped);
             container.Register<IPersonSampleRepository, PersonSampleRepository>(Lifestyle.Scoped);
+            
+            container.Register<IClienteAppService, ClienteAppService>(Lifestyle.Scoped);
+            container.Register<IClienteService, ClienteService>(Lifestyle.Scoped);
+            container.Register<IClienteRepository, ClienteRepository>(Lifestyle.Scoped);
+            
+            container.Register<IFuncionarioAppService, FuncionarioAppService>(Lifestyle.Scoped);
+            container.Register<IFuncionarioService, FuncionarioService>(Lifestyle.Scoped);
+            container.Register<IFuncionarioRepository, FuncionarioRepository>(Lifestyle.Scoped);
 
 
 

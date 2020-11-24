@@ -10,6 +10,8 @@ namespace Ucl.PontoNet.Application.AutoMapper
         public DomainToViewModelMappingProfile()
         {
             CreateMap<PersonSample, PersonSampleDto>();
+            CreateMap<Cliente, ClienteDto>();
+            CreateMap<Funcionario, FuncionarioDto>();
         }
     }
 }

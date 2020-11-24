@@ -7,7 +7,6 @@ namespace Ucl.PontoNet.Domain.Entities
 {
     public class Cliente : Entity
     {
-
         public string Nome { get; set; }
         public string Sobrenome { get; set; }
         public string CPF { get; set; }

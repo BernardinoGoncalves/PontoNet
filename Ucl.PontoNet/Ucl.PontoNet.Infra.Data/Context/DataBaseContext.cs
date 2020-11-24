@@ -22,6 +22,8 @@ namespace Ucl.PontoNet.Infra.Data.Context
 
 
             modelBuilder.ApplyConfiguration(new PersonSampleMap());
+            modelBuilder.ApplyConfiguration(new ClienteMap());
+            modelBuilder.ApplyConfiguration(new FuncionarioMap());
 
             base.OnModelCreating(modelBuilder);
 

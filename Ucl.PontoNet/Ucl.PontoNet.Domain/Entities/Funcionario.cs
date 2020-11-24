@@ -7,7 +7,6 @@ namespace Ucl.PontoNet.Domain.Entities
 {
     public class Funcionario : Entity
     {
-
         public string Nome { get; set; }
         public string Sobrenome { get; set; }
         public string CPF { get; set; }
@@ -15,7 +14,6 @@ namespace Ucl.PontoNet.Domain.Entities
         public string Telefone { get; set; }
         public string Matricula { get; set; }
         public string Cargo { get; set; }
-
 
     }
 }
