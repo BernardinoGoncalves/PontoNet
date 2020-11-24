@@ -12,5 +12,6 @@ namespace Ucl.PontoNet.Domain.Repositories.Interfaces
         Cliente GetByCpf(string Cpf);
         bool Insert(Cliente cliente);
         bool Delete(string Cpf);
+        bool Update(Cliente cliente);
     }
 }

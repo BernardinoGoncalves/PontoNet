@@ -53,5 +53,14 @@ namespace Ucl.PontoNet.Application.Core.Services
 
             return result;
         }
+
+        public bool Update(ClienteDto cliente)
+        {
+            var Obj = Mapper.Map<Cliente>(cliente);
+
+            var result = _clienteService.Update(Obj);
+
+            return result;
+        }
     }
 }

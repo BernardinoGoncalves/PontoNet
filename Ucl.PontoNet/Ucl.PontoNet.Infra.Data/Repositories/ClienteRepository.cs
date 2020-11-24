@@ -62,6 +62,20 @@ namespace Ucl.PontoNet.Infra.Data.Repositories
 
             return true;
         }
+        
+        public bool Update(Cliente cliente)
+        {
+            var Update = @" UPDATE [dbo].[CLIENTE]
+                               SET [NOME] = '" + cliente.Nome + @"'
+                                  ,[SOBRENOME] = '" + cliente.Sobrenome + @"'
+                                  ,[ENDERECO] = '" + cliente.Endereco + @"'
+                                  ,[TELEFONE] = '" + cliente.Telefone + @"' 
+                             WHERE [CPF] = '" + cliente.CPF +"'";
+
+            Connection.Execute(Update);
+
+            return true;
+        }
 
     }
 }

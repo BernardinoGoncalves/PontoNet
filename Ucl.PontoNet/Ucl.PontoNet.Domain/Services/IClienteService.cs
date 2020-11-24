@@ -10,5 +10,6 @@ namespace Ucl.PontoNet.Domain.Services
     {
         bool Insert(Cliente cliente);
         bool Delete(string Cpf);
+        bool Update(Cliente cliente);
     }
 }

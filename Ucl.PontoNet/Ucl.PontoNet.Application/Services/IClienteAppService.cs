@@ -10,6 +10,7 @@ namespace Ucl.PontoNet.Application.Services
         IEnumerable<ClienteDto> GetAll();
         ClienteDto GetByCpf(string Cpf);
         bool Insert(ClienteDto cliente);
+        bool Update(ClienteDto cliente);
         bool Delete(string Cpf);
     }
 }

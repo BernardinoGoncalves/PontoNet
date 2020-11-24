@@ -108,5 +108,27 @@ namespace Ucl.PontoNet.Api.Controllers
             var result = ClienteAppService.Delete(Cpf);
             return Ok(result);
         }
+
+
+        /// <summary>
+        ///     Atualizar cliente
+        /// </summary>
+        /// <remarks>
+        ///    Atualiza o cliente de acordo com o CPF informado.
+        /// </remarks>
+        /// <response code="200">Cliente atualizado!</response>
+        /// <response code="400">Cliente has missing/invalid values</response>
+        /// <response code="500">Oops! Can't list your area right now</response>
+        [HttpPut("Update")]
+        [ProducesResponseType(typeof(bool), 200)]
+        [ProducesResponseType(typeof(Error), 400)]
+        [ProducesResponseType(typeof(Error), 500)]
+        public IActionResult Put([FromBody] ClienteDto cliente)
+        {
+            var result = ClienteAppService.Update(cliente);
+           return Ok(result);
+        }
+
+
     }
 }

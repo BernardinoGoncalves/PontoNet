@@ -49,5 +49,20 @@ namespace Ucl.PontoNet.Domain.Core.Services
             }
             
         }
+
+        public bool Update(Cliente cliente)
+        {
+            try
+            {
+                var result = _clienteRepository.Update(cliente);
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
     }
 }
